@@ -1,0 +1,172 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-right {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -360px -96px;
+  width: 8px;
+  height: 13px;
+}
+.icon-ball {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -335px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-brush {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -226px -229px;
+  width: 50px;
+  height: 42px;
+}
+.icon-comp {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -285px -170px;
+  width: 49px;
+  height: 50px;
+}
+.icon-facebook {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -256px -279px;
+  width: 35px;
+  height: 35px;
+}
+.icon-game {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -279px;
+  width: 41px;
+  height: 50px;
+}
+.icon-google {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -335px -35px;
+  width: 35px;
+  height: 35px;
+}
+.icon-graph {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -235px -170px;
+  width: 50px;
+  height: 50px;
+}
+.icon-hamburger-menu {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -128px -229px;
+  width: 48px;
+  height: 48px;
+}
+.icon-heart {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -176px -229px;
+  width: 50px;
+  height: 46px;
+}
+.icon-instagram {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -221px -279px;
+  width: 35px;
+  height: 35px;
+}
+.icon-location {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -335px -138px;
+}
+.icon-logo {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -229px;
+  width: 128px;
+  height: 50px;
+}
+.icon-mobile {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -305px -100px;
+  width: 28px;
+  height: 50px;
+}
+.icon-our_story_logo {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px 0px;
+  width: 235px;
+  height: 229px;
+}
+.icon-paper {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -335px -96px;
+  width: 25px;
+  height: 25px;
+}
+.icon-person1 {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -41px -279px;
+  width: 45px;
+  height: 45px;
+}
+.icon-person2 {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -86px -279px;
+  width: 45px;
+  height: 45px;
+}
+.icon-person3 {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -235px -100px;
+  width: 70px;
+  height: 70px;
+}
+.icon-person4 {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -176px -279px;
+  width: 45px;
+  height: 45px;
+}
+.icon-person5 {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -131px -279px;
+  width: 45px;
+  height: 45px;
+}
+.icon-phone {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -335px -121px;
+  width: 17px;
+  height: 17px;
+}
+.icon-quotes {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -335px -70px;
+  width: 32px;
+  height: 26px;
+}
+.icon-twitter {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -276px -229px;
+  width: 35px;
+  height: 35px;
+}
+.icon-video-play {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -235px 0px;
+  width: 100px;
+  height: 100px;
+}
+.icon-youtube {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -291px -279px;
+  width: 35px;
+  height: 35px;
+}
