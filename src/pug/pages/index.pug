@@ -6,6 +6,8 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         title Test
         link(rel="stylesheet", href="static/css/main.css")
+        link(href="https://fonts.googleapis.com/css?family=Hammersmith+One|Roboto&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet")
         script(src="static/js/main.js")
         script(src="static/js/libs.min.js")
     body
@@ -19,3 +21,5 @@ html(lang="en")
             include index/testimonials.pug 
             include index/contact_form.pug
             include index/footer.pug
+        include index/modal.pug
+        #overlay
