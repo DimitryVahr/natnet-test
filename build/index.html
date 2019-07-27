@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test</title>
     <link rel="stylesheet" href="static/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Roboto&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap" rel="stylesheet">
     <script src="static/js/main.js"></script>
     <script src="static/js/libs.min.js"></script>
   </head>
@@ -13,9 +15,9 @@
     <div class="wrapper">
       <header class="header" id="header">
         <div class="header-top"><i class="icon-logo header__logo"> </i>
-          <nav class="nav"><a class="nav__item" href="index.html#header">HOME</a><a class="nav__item" href="index.html#our_story">ABOUT</a><a class="nav__item" href="index.html#expertise">EXPERTISE</a><a class="nav__item" href="index.html#team">TEAMS</a><a class="nav__item" href="index.html#works">WORKS</a><a class="nav__item" href="index.html#testimonials">PEOPLE SAY</a><a class="nav__item" href="index.html#contact_form">CONTACT</a></nav>
+          <nav class="nav"><a class="nav__item" href="index.html#header">HOME</a><a class="nav__item" href="index.html#our_story">ABOUT</a><a class="nav__item" href="index.html#expertise">EXPERTISE</a><a class="nav__item" href="index.html#team">TEAMS</a><a class="nav__item" href="index.html#works">WORKS</a><a class="nav__item" href="index.html#testimonials">PEOPLE SAY</a><a class="nav__item" href="index.html#contact_form">CONTACT</a></nav><img class="dagger" src="static/img/dagger.png" alt="">
         </div>
-        <h1 class="header__title">We Are Awesome Creative Agency</h1>
+        <h1 class="header__title">We Are Awesome Creative Agency</h1><i class="header__underscore"></i>
         <p class="header__text">
           This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
@@ -27,16 +29,16 @@
           <p class="story__text">
              This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
             lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
           </p>
+          <p class="story__text">
+               Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          </p><a class="our_story__button" href="#">LEARN MORE</a>
         </div>
       </div>
-      <div class="video" id="about"><i class="video-button icon-video-play"></i><span class="video-description">WATCH OUR STORY</span>
-        <embed class="vidio-youtube" src="https://www.youtube.com/embed/KvUgaHTNit4" frameborder="0">
-      </div>
+      <div class="video" id="about"><i class="video-button icon-video-play"></i><span class="video-description">WATCH OUR STORY</span></div>
       <article class="expertise" id="expertise">
-        <h1 class="expertise__title">EXPERTISE</h1><span class="expertise__description">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
+        <h1 class="expertise__title">EXPERTISE</h1><span class="expertise__description">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span><i class="expertise__underscore"></i>
         <table class="table expertise__table">
           <tr>
             <td>
@@ -58,6 +60,11 @@
           <tr>
             <td>
               <div class="expertise__item"><i class="icon-graph expertise-icon"></i><span>SEARCH ENGINE OPTIMIZATION</span>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+              </div>
+            </td>
+            <td>
+              <div class="expertise__item"><i class="icon-game expertise-icon"></i><span>GAME DEVELOPMENT</span>
                 <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.  </p>
               </div>
             </td>
@@ -66,16 +73,11 @@
                 <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
               </div>
             </td>
-            <td>
-              <div class="expertise__item"><i class="icon-game expertise-icon"></i><span>GAME DEVELOPMENT</span>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-              </div>
-            </td>
           </tr>
         </table>
       </article>
       <article class="team" id="team">
-        <h1 class="team__title">MEET OUR AMAZING TEAM</h1><span class="team__description">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
+        <h1 class="team__title">MEET OUR AMAZING TEAM</h1><span class="team__description">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span><i class="team__underscore"></i>
         <div class="employee-list">
           <div class="employee">
             <div class="employee__face"> </div><span class="employee__name">SEMF UCUK</span><span class="employee__position">CEO &amp; FOUNDER</span>
@@ -137,7 +139,7 @@
             </p>
           </div>
           <div class="footer-center"><span class="footer-center__title">OUR STUDIO</span>
-            <div class="footer-center__address"><i class="icon-location"></i>
+            <div class="footer-center__address"><i class="icon-location icon"></i>
               <p class="footer-address-text">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p>
             </div>
             <div class="footer-center__phone"><i class="icon-phone icon"></i><a class="footer-phone-text" href="tel:+622122243333">(+62) 21-2224 3333</a></div>
@@ -152,5 +154,9 @@
         </div>
       </footer>
     </div>
+    <div class="modal" id="modal">
+      <embed class="vidio-youtube" src="https://www.youtube.com/embed/KvUgaHTNit4" frameborder="0">
+    </div>
+    <div id="overlay"></div>
   </body>
 </html>
