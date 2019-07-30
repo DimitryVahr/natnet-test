@@ -3,12 +3,38 @@
         left: 20.6%
         right: 20.6%
         top: 70px
-    display: flex
-    flex-direction: column
-    align-items: center
     background-image: url(../img/fon-testimonials.png)
     background-size: cover
     min-height: 500px
+    display: flex
+    flex-direction: column
+    align-items: center
+.slider-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+.slick-slider
+    display: flex
+    width: 100%
+.person
+    max-width: 45px
+    max-height: 45px
+    display: inline-block
+    &:focus
+        outline: none
+.person-selected
+.testimonials-persons
+    .slick-current
+        max-width: 70px 
+        max-height: 70px
+        width: 70px !important
+        height: 70px
+    .slick-track
+        display: flex
+        align-self: center
+        transform: translate3d(0px, 0px, 0px) !important
+    .slick-list
 .testimonials__text
     width: 100%
     max-width: 770px
@@ -41,8 +67,28 @@
 .testimonials-persons
     display: flex
     align-items: center
+    justify-content: space-between
     margin-top: 40px
     cursor: pointer
+    width: auto
+    width: 310px
+    height: 70px
+.slick-list
+    width: 100%
+    display: flex
+.slick-track
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+.slider-item
+    width: 100% 
+    cursor: pointer
+    display: flex !important
+    flex-direction: column
+    &:focus
+        outline: none
+
 
 @media (max-width: 940px)
     .testimonials-persons

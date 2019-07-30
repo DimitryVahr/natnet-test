@@ -29,6 +29,27 @@ window.onload = function () {
         openModal('#modal');
     });
 
+    //slick-slider
+    $('.slick-slider').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        initialSlide: 2,
+        draggable: false,
+    });
+    $('.testimonials-persons').slick({
+        asNavFor: '.slick-slider',
+        dots: false,
+        slidesToShow: 5,
+        focusOnSelect: true,
+        arrows: false,
+        infinite: false,
+        draggable: false,
+        initialSlide: 2,
+    });
+
 }
 
 
