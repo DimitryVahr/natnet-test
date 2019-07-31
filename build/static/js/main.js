@@ -3,15 +3,19 @@ window.onload = function () {
     var overlay = $('#overlay');
     function openModal(modal) {
         overlay.fadeIn(400, function () {
+            $modal.appendChild($video);
             $(modal)
                 .css('display', 'flex')
                 .animate({ opacity: 1 }, 200);
         });
     };
-
+    var $modal = $(".modal")[0];
+    var $video = $(".video-youtube")[0];
+    $modal.removeChild($video);
     function closeModal(modal) {
         $(modal)
             .animate({ opacity: 0 }, 200, function () {
+                $modal.removeChild($video);
                 $(this).hide();
                 overlay.fadeOut(400);
             });
@@ -49,7 +53,20 @@ window.onload = function () {
         draggable: false,
         initialSlide: 2,
     });
-
+  /*   window.onresize = function () {
+        var minW = 0;
+        worksItems(minW);
+    };
+    function worksItems(minW) {
+        $(".works__item").each(function () {
+            var w_block = parseInt($(this).width());
+            if (w_block > minW) {
+                minW = w_block;
+            };
+        });
+        $(".works__item").css('max-width', minW);
+    }; */
+  
 }
 
 
