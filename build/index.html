@@ -98,7 +98,9 @@
           <h1 class="works__title">OUR WORKS</h1>
           <div class="works-top__link"><a class="work-link-text" href="#">See All Project in dribbble</a><i class="icon-arrow-right icon"></i></div>
         </div>
-        <div class="works-list">   
+        <div class="works-list grid">
+          <div class="works__item"></div>
+          <div class="works__item"></div>
           <div class="works__item"></div>
           <div class="works__item"></div>
           <div class="works__item"></div>
@@ -127,8 +129,6 @@
               This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
               Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
               Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-              Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
-              Sed non  mauris vitae erat consequat auctor eu in elit.
             </p><span class="testimonials__autor"> JANE GALADRIEL</span><span class="testimonials__position">CEO TENGKUREP</span>
           </div>
           <div class="slider-item">
@@ -161,14 +161,16 @@
         </div>
         <div class="testimonials-persons"><img class="person" src="static/img/person1.png" alt=""><img class="person" src="static/img/person2.png" alt=""><img class="person" src="static/img/person3.png" alt=""><img class="person" src="static/img/person4.png" alt=""><img class="person" src="static/img/person5.png" alt=""></div>
       </div>
-      <form class="contact_form" id="contact_form">
-        <h1 class="contact_form__title">GIVE US A GOOD NEWS</h1>
-        <input class="contact_form__name" type="text" placeholder="Name">
-        <input class="contact_form__email" type="text" placeholder="Email">
-        <input class="contact_form__subject" type="text" placeholder="Subject">
-        <textarea class="contact_form__massage" placeholder="Your Massage"></textarea>
-        <button class="contact_form__submit" type="submit">SUBMIT</button>
-      </form>
+      <article class="container-form" id="container-form">
+        <h1 class="container-form__title">GIVE US A GOOD NEWS</h1>
+        <form class="contact_form">
+          <input class="contact_form__name" type="text" placeholder="Name" required>
+          <input class="contact_form__email" type="email" placeholder="Email">
+          <input class="contact_form__subject" type="text" placeholder="Subject">
+          <textarea class="contact_form__massage" placeholder="Your Massage" required></textarea>
+          <button class="contact_form__submit" type="submit">SUBMIT</button>
+        </form>
+      </article>
       <footer class="footer" id="footer">
         <div class="footer-top">
           <div class="footer-left"><i class="icon-logo footer__logo icon"></i>
@@ -185,7 +187,10 @@
             <div class="footer-center__phone"><i class="icon-phone icon"></i><a class="footer-phone-text" href="tel:+622122243333">(+62) 21-2224 3333</a></div>
           </div>
           <div class="footer-right"><span class="footer-right__title">STAY IN TOUCH</span>
-            <div class="footer-right__links"><a class="footer-right__link-text" href="#">Subscribe our newsletter</a><a class="footer-right__link-button" href=""> <i class="icon-paper icon"></i></a></div>
+            <form class="footer-form">
+              <input class="footer-form__text" type="text" id="footer-form__text" placeholder="Subscribe our newsletter" required>
+              <button class="footer-form__submit" type="submit"> <i class="icon-paper icon"></i></button>
+            </form>
             <div class="footer-right__list-icons"><i class="icon-facebook footer-right__icon"></i><i class="icon-twitter footer-right__icon"></i><i class="icon-ball footer-right__icon"></i><i class="icon-instagram footer-right__icon"></i><i class="icon-google footer-right__icon"></i><i class="icon-youtube footer-right__icon"></i></div>
           </div>
         </div>
