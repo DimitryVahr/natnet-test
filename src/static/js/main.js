@@ -53,20 +53,6 @@ window.onload = function () {
         draggable: false,
         initialSlide: 2,
     });
-  /*   window.onresize = function () {
-        var minW = 0;
-        worksItems(minW);
-    };
-    function worksItems(minW) {
-        $(".works__item").each(function () {
-            var w_block = parseInt($(this).width());
-            if (w_block > minW) {
-                minW = w_block;
-            };
-        });
-        $(".works__item").css('max-width', minW);
-    }; */
-  
 }
 
 

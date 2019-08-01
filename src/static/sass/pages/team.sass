@@ -26,10 +26,7 @@
 
 .employee-list
     width: 940px
-    display: -ms-grid
-    display: grid
-    -ms-grid-columns: auto auto auto auto
-    grid-template-columns: auto auto auto auto
+    display: flex
     margin-top: 47px
     position: relative
     justify-content: space-between
@@ -100,11 +97,10 @@
     .employee-list
         flex-wrap: wrap
         width: 60%
-        grid-template-columns: auto auto
         justify-content: space-around
     .team__button
         margin-bottom: 50px
 @media (max-width: 810px)
     .employee-list
-        grid-template-columns: auto
+        flex-direction: column
         justify-content: center

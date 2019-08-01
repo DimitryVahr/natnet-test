@@ -26,7 +26,6 @@
     height: 45px
     border: 1px solid #eaeaea
     padding-left: 21px
-    color: #4a4666
     font-size: 15px
     font-family: Roboto
     font-weight: 300 
@@ -34,6 +33,15 @@
     &:focus
         color: #4a4666
         border: 1px solid #7fc7ff
+    &::placeholder
+        opacity: 0.5
+        color: #413d4b
+.contact_form__name::-webkit-input-placeholder
+        opacity: 0.5
+        color: #413d4b
+.contact_form__name::-moz-placeholder
+        opacity: 0.5
+        color: #413d4b
 .contact_form__email, .contact_form__subject, .contact_form__massage
     margin-top: 23px
 .contact_form__subject

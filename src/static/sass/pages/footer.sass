@@ -11,12 +11,13 @@
         top: 70px
 .footer-top
     display: flex
+    align-self: center
     justify-content: space-between
 .footer-left
     width: 283px
 .footer__logo
 .footer-left__text
-    margin-top: 27px
+    margin-top: 16px
     color: #ffffff
     font-family: Roboto
     font-size: 14px
@@ -25,7 +26,7 @@
 
 .footer-center
     width: 267px
-    padding-top: 10px
+    padding-top: 13px
 .footer-center__title
     color: #ffffff
     font-family: "Roboto - Black"
@@ -34,12 +35,13 @@
     line-height: 26px
     text-transform: uppercase
 .footer-center__address
-    margin-top: 39px
+    margin-top: 33px
     display: flex
 .icon-location
     min-width: 14px
     min-height: 19px
     margin-right: 12px
+    padding-top: 4px
 .footer-address-text, .footer-phone-text
     color: #ffffff
     font-family: Roboto
@@ -47,7 +49,7 @@
     font-weight: 300
     line-height: 26px
 .footer-address-text
-    display: flex
+    margin-top: -4px
 .footer-phone-text
     display: inline-block
     margin-left: 12px
@@ -56,7 +58,7 @@
         color: #ffffff
 
 .footer-right
-    padding-top: 10px
+    padding-top: 13px
     max-width: 291px
 .footer-right__title
     color: #ffffff
@@ -67,7 +69,7 @@
     text-transform: uppercase
 .footer-form
     display: flex
-    margin-top: 39px
+    margin-top: 33px
 .footer-form__text
     display: block
     padding:
@@ -75,7 +77,6 @@
         top: 1px
     width: 211px
     height: 45px
-    letter-spacing: 0.3px
     border: 1px solid #9a94ad
     color: #ffffff
     font-family: Roboto
@@ -88,8 +89,14 @@
         color: #ffffff
 .footer-form__text::-webkit-input-placeholder
     color: #9a94ad
+    letter-spacing: 0.3px
+    opacity: 0.75
+    color: #ffffff
 .footer-form__text::-moz-placeholder
     color: #9a94ad
+    letter-spacing: 0.3px
+    opacity: 0.75
+    color: #ffffff
 .footer-form__submit
     display: block
     text-align: center
@@ -139,31 +146,22 @@
         padding-left: 10%
         padding-right: 10%
     .footer-top
+        max-width: 650px
+        flex-wrap: wrap
         text-align: center
-        display: grid
-        grid-template-columns: auto auto
-        grid-template-areas: "footer-left footer-center" "footer-right footer-right"
         justify-content: center
-    .footer-left
-        grid-area: footer-left
-    .footer-center
-        grid-area: footer-center
     .footer-right
         margin-top: 30px
-        margin: auto
-        grid-area: footer-right
     .footer-bottom
-        flex-wrap: wrap
-        justify-content: center
+        flex-direction: column
+        align-items: center
     .footer-bottom__link
         margin-bottom: 10px
-@media (max-width: 700px)
+@media (max-width: 650px)
     .footer-top
-        grid-template-columns: auto
+        max-width: 500px
 @media (max-width: 630px)
     .footer-top
-        grid-template-columns: auto
-        grid-template-areas: "footer-left" "footer-center" "footer-right"
     .footer-center__address, .footer-center__phone
         display: flex
         flex-direction: column
