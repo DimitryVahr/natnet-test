@@ -6,9 +6,13 @@
         left: 20.6%
         right: 20.6%
         top: 15px
-    display: flex
-    flex-direction: column
-    align-items: center
+    display: -ms-grid
+    display: grid
+    -ms-grid-columns: auto
+    -ms-grid-rows: auto auto auto auto auto
+    -ms-grid-template-columns: 1fr
+    grid-template-columns: auto
+    justify-content: center
 .nav
     max-width: 530px
     width: 100%
@@ -26,12 +30,16 @@
 .navbar-toggler
     display: none
 .header-top
+    -ms-grid-row: 1
+    -ms-grid-column: 1
     max-width: 940px
     width: 100%
     display: flex
     align-items: center
     justify-content: space-between
 .header__title
+    -ms-grid-row: 2
+    -ms-grid-column: 1
     width: 100%
     color: #ffffff
     font-family: 'Playfair Display', Black
@@ -40,7 +48,14 @@
     letter-spacing: 1.2px
     text-align: center
     margin-top: 163px
+.header__underscore
+    -ms-grid-row: 3
+    -ms-grid-column: 1
+    margin: auto
 .header__text
+    -ms-grid-row: 4
+    -ms-grid-column: 1
+    margin: auto
     width: 100%
     color: #dfdee5
     font-family: 'Roboto', Thin
@@ -52,6 +67,8 @@
     margin-top: 30px
     letter-spacing: 0.7px
 .header__button
+    -ms-grid-row: 5
+    -ms-grid-column: 1
     color: #00e0d0
     font-family: "Hammersmith One"
     font-size: 16px
@@ -63,6 +80,7 @@
     text-align: center
     padding-top: 8px
     padding-left: 2px
+    margin: auto
     margin-top: 50px
     margin-bottom: 207px
     &:hover

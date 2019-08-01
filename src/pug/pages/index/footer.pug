@@ -16,9 +16,9 @@ footer.footer#footer
                 a(href="tel:+622122243333").footer-phone-text (+62) 21-2224 3333
         .footer-right
             span.footer-right__title STAY IN TOUCH
-            .footer-right__links
-                a(href="#").footer-right__link-text Subscribe our newsletter
-                a(href="").footer-right__link-button 
+            form.footer-form
+                input(type="text" id="footer-form__text" placeholder="Subscribe our newsletter" required).footer-form__text
+                button(type="submit").footer-form__submit 
                     i(class="icon-paper icon")
             .footer-right__list-icons
                 i(class="icon-facebook footer-right__icon")
