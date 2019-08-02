@@ -79,8 +79,10 @@
     background-color: #00e0d0
     margin-top: 21px
 
-
-
+.nav-show
+    display: flex !important
+.top-fixed
+    margin-top: 350px !important
 .wrapper 
     display: flex
     flex-direction: column
@@ -96,16 +98,23 @@
     .icon-hamburger-menu
         display: block
     .header-top
-        flex-direction: column
+        position: relative
     .nav
-        margin-top: 30px
-@media (max-width: 600px)
-    .nav
+        display: none
+        position: absolute
         flex-direction: column
         align-items: center
+        align-self: center
+        top: 90px
+        margin-left: auto
+        margin-right: auto
+        left: 0px
+        right: 0px
+        min-width: 100%
     .nav__item
         &:not(:first-child)
             margin-top: 20px
+@media (max-width: 600px)
     .header__title
         margin-top: 80px
 @media (min-width: 1200px)
