@@ -163,11 +163,15 @@
       </div>
       <article class="container-form" id="container-form">
         <h1 class="container-form__title">GIVE US A GOOD NEWS</h1>
-        <form class="contact_form">
-          <input class="contact_form__name" type="text" placeholder="Name" required>
-          <input class="contact_form__email" type="email" placeholder="Email">
-          <input class="contact_form__subject" type="text" placeholder="Subject">
-          <textarea class="contact_form__massage" placeholder="Your Massage" required></textarea>
+        <form class="contact_form form">
+          <input class="contact_form__name" type="text" id="contact_form__name" placeholder="Name" required>
+          <label class="contact_form__label label" for="contact_form__name">Name</label>
+          <input class="contact_form__email" type="email" id="contact_form__email" placeholder="Email">
+          <label class="contact_form__label label" for="contact_form__email">Email</label>
+          <input class="contact_form__subject" type="text" id="contact_form__subject" placeholder="Subject">
+          <label class="contact_form__label label" for="contact_form__subject">Subject</label>
+          <textarea class="contact_form__massage" id="contact_form__massage" placeholder="Your Massage" required></textarea>
+          <label class="contact_form__label label" for="contact_form__massage">Your Massage</label>
           <button class="contact_form__submit" type="submit">SUBMIT</button>
         </form>
       </article>
@@ -189,6 +193,7 @@
           <div class="footer-right"><span class="footer-right__title">STAY IN TOUCH</span>
             <form class="footer-form">
               <input class="footer-form__text" type="text" id="footer-form__text" placeholder="Subscribe our newsletter" required>
+              <label class="footer-form__label label" for="footer-form__text">Subscribe our newsletter</label>
               <button class="footer-form__submit" type="submit"> <i class="icon-paper icon"></i></button>
             </form>
             <div class="footer-right__list-icons"><i class="icon-facebook footer-right__icon"></i><i class="icon-twitter footer-right__icon"></i><i class="icon-ball footer-right__icon"></i><i class="icon-instagram footer-right__icon"></i><i class="icon-google footer-right__icon"></i><i class="icon-youtube footer-right__icon"></i></div>
