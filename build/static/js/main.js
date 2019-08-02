@@ -53,6 +53,20 @@ window.onload = function () {
         draggable: false,
         initialSlide: 2,
     });
+    var sandwich = function () {
+        $(document).on('click', '.sandwich', function () {
+            $(this).toggleClass('sandwich--active');
+            $('.nav').toggleClass('nav-show');
+            $('.header__title').toggleClass('top-fixed'); 
+        });
+    };
+    
+    $( window ).resize(function() {
+        if(($( window ).width() > 1200) && $('.sandwich')[0].classList.contains('sandwich--active')){
+            $('.sandwich').click();
+        }
+    });
+    sandwich();
 }
 
 
