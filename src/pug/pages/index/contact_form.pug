@@ -1,8 +1,12 @@
 article.container-form#container-form
     h1.container-form__title GIVE US A GOOD NEWS
-    form.contact_form
-        input(type="text" class="contact_form__name" placeholder="Name" required) 
-        input(type="email" class="contact_form__email" placeholder="Email")
-        input(type="text" class="contact_form__subject" placeholder="Subject")
-        textarea(class="contact_form__massage" placeholder="Your Massage" required)
+    form.contact_form.form
+        input(type="text" class="contact_form__name" id="contact_form__name" placeholder="Name" required) 
+        label(for="contact_form__name" class="contact_form__label label") Name
+        input(type="email" class="contact_form__email" id="contact_form__email" placeholder="Email")
+        label(for="contact_form__email" class="contact_form__label label") Email
+        input(type="text" class="contact_form__subject" id="contact_form__subject" placeholder="Subject")
+        label(for="contact_form__subject" class="contact_form__label label") Subject
+        textarea(class="contact_form__massage" id="contact_form__massage" placeholder="Your Massage" required)
+        label(for="contact_form__massage" class="contact_form__label label") Your Massage
         button(type="submit" class="contact_form__submit") SUBMIT
